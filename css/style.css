@@ -1,0 +1,126 @@
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+	p{font-family: 'Noto Sans KR', sans-serif;font-size: 3.4em;font-weight: 500;line-height: 1.3em;}
+	ul,li{font-family: 'Noto Sans KR', sans-serif;font-size: 1.1em;}
+	div{font-family: 'Noto Sans KR', sans-serif;}
+	footer, footer p{font-family: 'Noto Sans KR', sans-serif; font-size: 1em; width: 1000px; margin: auto;}
+
+	body, h1, img, h2, p, ul, li,nav{margin: 0;}
+
+	nav{height: 50px;background: white; position: fixed;text-align: center; width: 100%;z-index: 50;}
+	nav ul{display: block; float: right;list-style: none; width: 300px; height: 50px; text-align: center;line-height: 50px;margin-right: 70px;}
+	nav li{display: block;  float: left; width: 100px;font-size: 0.9em;}
+	nav a{display: block; text-decoration: none;color: black;}
+	nav a:hover{color: tomato;transition: 0.5s; opacity: 100%;}
+	.logo{display: block; width: 200px; height: 50px; float: left; line-height: 50px; font-size: 1.1em;padding-left: 50px; background: white;}
+	.logo a:hover{color: tomato;transition: 0.5s;}
+
+	section{width: 1000px;margin: auto;background-color: white;}
+	.gra{background: linear-gradient(to bottom, white 40%, black 60%);}
+	.bg-white{background-color: white;}
+	.bg-black{background-color: black;}
+
+	.font-white{color: white;}
+
+	.p-down{font-size: 3.7em; writing-mode: vertical-lr; color: white;}
+	.p-down2{font-size: 3.7em; writing-mode: vertical-lr; color: black; font-weight: 500;}
+
+	img{widows: 100%;}
+
+	.row{width: 1000px;z-index: 20; position: relative; margin: auto;}
+	.h-500{height: 500px;}
+
+	#abs1{width: 28%; height: auto; position: absolute; left: 30px; top: 1260px;animation: rotation1 3s infinite;}
+	#abs2{width: 50%; height: auto; position: absolute;left: 450px; top: 1390px;animation: rotation2 3s infinite;}
+	#abs3{width: 60%; height: auto; position: absolute; left: 0; top: 2090px; animation: leftright1 2s infinite alternate;}
+	#abs4{width: 80%; height: auto; position: absolute; left: 200px; top: 2200px;animation: leftright2 2s infinite alternate;animation-delay: 0.5s;}
+	#abs5{width: 95%; height: auto; position: absolute; left: -160px; top: 2510px;animation: leftright3 2s infinite alternate; animation-delay: 0.5s;}
+	#abs6{width: 60%; height: auto; position: absolute; left: 530px; top: 2410px;animation: leftright4 2s infinite alternate;}
+	#abs7{width: 50%; height: auto; position: absolute; left: 125px; top: 2670px;animation: topbottom1 2s infinite alternate; animation-delay: 1s;}
+
+	@keyframes rotation1{
+		100%{transform: rotate3D(1,1,0,360deg);}}
+
+	@keyframes rotation2{
+		100%{transform: rotate3D(0,1,0,360deg);}}
+
+	@keyframes rotation3{
+		100%{transform: rotateY(360deg);}}
+
+	@keyframes leftright1{
+		0%{left: -300px; opacity: 0%;}
+		100%{left: 0; opacity: 100%;}}
+
+	@keyframes leftright2{
+		0%{left: 500px;opacity: 0%;}
+		100%{left: 200px;opacity: 100%;}}
+
+	@keyframes leftright3{
+		0%{left: -400px;opacity: 0%;}
+		100%{left: -160; orphans: 100%;}}
+
+	@keyframes leftright4{
+		0%{left: 850px; opacity: 0%;}
+		100%{left: 530px; opacity: 100%;}}
+
+	@keyframes topbottom1{
+		0%{top: 2670px;opacity: 20%;}
+		30%{opacity: 70%;}
+		100%{top: 2500px;opacity: 100%;}}
+
+	@keyframes topbottom2{
+		from{top: 3700px;}
+		to{top: 3400px;}}
+
+	@keyframes leftright5{
+		from{left: 5px;}
+		to{left: 720px;}}
+
+	@keyframes leftright6{
+		from{left: 650px;}
+		to{left: -50px;}}
+
+	@keyframes topbottom3{
+		from{top: 1685px;}
+		to{top: 1885px;}}
+
+	@keyframes topbottom4{
+		from{top: 2195px;}
+		to{top: 2395px;}}
+
+	@keyframes leftright7{
+		0%{left: 155px;}
+		25%{left: 165px;}
+		50%{left: 155px;}
+		75%{left: 165px;}
+		100%{left: 155px;}}
+
+
+
+	#abs8{width: 48%; height: auto; position: absolute; left: 161px; top: 2195px; animation: leftright7 1s infinite alternate;}
+
+	#abs9{width: 49%; height: auto; position: absolute; left: 225px; top: 2512px;}
+	#abs10{width: 68%; height: auto; position: absolute; left: 164px; top: 3460px;animation: topbottom2 2s infinite alternate;}
+	#abs11{width: 32%; height: auto; position: absolute; left: 5px; top: 3800px;animation: leftright5 2s forwards; animation-delay: 25s;}
+	#abs12{width: 34%; height: auto; position: absolute; left: 650px; top: 4275px;animation: leftright6 2s forwards; animation-delay: 25s;}
+
+	#abs13{position: absolute; left: 90px; top: 1885px; animation: topbottom3 2s infinite;}
+	#abs14{position: absolute; left: 90px; top: 2395px; animation: topbottom4 2s infinite;}
+	#abs15{position: absolute; left: 300px; top: 3040px;}
+	#abs16{position: absolute; left: 230px; top: 3600px;}
+	#abs17{position: absolute; left: 500px; top: 3670px;}
+
+	.btn {position: absolute;top: 0;left: 0;transform: translate(-50%, 0%);background-color:#D8CEF6; color: black;font-size: 16px;padding:12px 24px; border: none;border-radius: 30px;text-decoration: none; font-weight: 700;}
+	.btn:hover {background-color: black;color:#D8CEF6;transition: all 0.5s;}
+
+	#abs18{width: 51%; height: auto; position: absolute; left: -35px; top: 3730px;animation: rotation3 3s infinite;}
+	#abs19{position: absolute; left: 450px; top: 4200px;}
+	#abs20{position: absolute; left: 700px; top: 4430px;}
+
+	.flexbox {display: flex;}
+	.footer-bg{background-color: #D8CEF6;}
+	.footer-div{width: 20%;margin-top: 70px;padding-left: 50px;}
+	#abs21{position: absolute; left: -1015px; top: -20px;}
+	#abs22{position: absolute; left: -1060px; top: 100px;}
+
+
+</style>
